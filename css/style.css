@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background: #fff;
+  background-color: #fff;
 }
 
 p,
@@ -35,10 +35,11 @@ button {
 
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
+
+/* HEADER */
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -75,6 +76,7 @@ button {
   align-items: center;
 }
 .link-menu {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -83,6 +85,17 @@ button {
   color: #2e2f42;
   padding: 24px 0;
 }
+
+.link-menu:hover,
+.link-menu:focus {
+  color: #404bbf;
+}
+
+.link-menu:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
+
 .page-adress {
   font-style: normal;
   margin-left: auto;
@@ -94,6 +107,7 @@ button {
   align-items: center;
 }
 .link-adress {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -101,6 +115,14 @@ button {
   color: #434455;
   padding: 24px 0;
 }
+
+.link-adress:hover,
+.link-adress:focus {
+  color: #404bbf;
+}
+
+/* HERO */
+
 .hero {
   background: #2e2f42;
   padding-top: 188px;
@@ -138,6 +160,8 @@ button {
 .hero-btn:focus {
   background-color: #404bbf;
 }
+
+/* SECTION ADVANT */
 .sec-advant {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -170,6 +194,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  color: #2e2f42;
 }
 .advant-item-text {
   font-weight: 400;
@@ -177,6 +202,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* SECTION TEAM */
 .section-team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -202,7 +229,7 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
-  width: calc((100% - 72px) / 3);
+  width: calc((100% - 72px) / 4);
 }
 .name-box {
   padding: 32px 0;
@@ -223,6 +250,8 @@ button {
   text-align: center;
   color: #434455;
 }
+
+/* SECTION PORTFOLIO */
 .section-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -267,6 +296,8 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* FOOTER */
 
 .footer {
   background-color: #2e2f42;
