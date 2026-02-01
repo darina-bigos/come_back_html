@@ -416,3 +416,32 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+# how to make overlay
+
+Задаємо div.box властивість overflow зі значенням hidden, щоб візуально сховати div.overlay при зміщенні за межі div.box.
+
+
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+Додаємо div.overlay перехід для анімації властивості transform, тим самим анімуємо появу оверлею.
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+}
